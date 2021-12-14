@@ -155,30 +155,69 @@ canvas {
 
 .profile-container {
     background-color: #eeeeee;
-    border-radius: 3%;
-
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 42%;
-    height: 80%
+    height: 80%;
+
+    /* Border */
+    border-radius: 3%;
+    border: 3px black solid;
 }
 
 .profile-container > * {
     color: black;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
 
+.profile-container > img {
+    border-radius: 5%;
+    border: black 2px solid;
+    height: 40%;
+    min-width: 35%;
+    align-self: center;
+    margin: 1rem;
+}
+
+/* Profile Container and it's Beauty :) */
+.profile-container a {
+    background: -webkit-linear-gradient(#414141, #111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.profile-container a:hover {
+    background:-webkit-linear-gradient(#383838, #090909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-container p {
+    margin: 1rem;
+    font-size: 18px;
 }
 
 .name-container {
     display: flex;
     flex-direction: row;
+    /* Handle Children */
     justify-content: center;
+    align-self: center;
     align-items: center;
     text-align: center;
+    max-width: 60%;
+    border-bottom: 2px black solid;
 }
 
 .name-container h2 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+
 
 /* Scroll bar stuff */
 ::-webkit-scrollbar-thumb {
